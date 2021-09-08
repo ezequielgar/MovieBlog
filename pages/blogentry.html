@@ -103,9 +103,7 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
- 
- 
-      
+
     </main>
  
     <!-- Modal -->
@@ -113,15 +111,49 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="modalnavbarLabel">Modal title</h5>
+        <h5 class="modal-title" id="modalnavbarLabel">MovieBlog</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        ...
+
+        <form>
+          <div class="mb-3">
+            <p class="lead">Creación de tu cuenta</p>
+            <label for="suscrip-email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="suscrip-email" required maxlength="45" minlength="5">
+            <div id="emailHelp" class="form-text">Nunca compartiremos tu información con otros.</div>
+          </div>
+          <div class="mb-3">
+            <label for="suscrip-pass" class="form-label">Password</label>
+            <input type="password" class="form-control" id="suscrip-pass" required maxlength="12" minlength="8">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Recibir notificaciones por email</label>
+          </div>
+          
+          <button type="submit" class="btn btn-warning" id="liveToastBtn">Crear cuenta</button>
+
+          <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+            <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+              <div class="toast-header">
+                
+                <strong class="me-auto">MovieBlog</strong>
+                <small>Bienvenido</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+              </div>
+              <div class="toast-body">
+                Verifica tu correo para completar la suscripción.
+              </div>
+            </div>
+          </div>
+
+        </form>
+        
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        
       </div>
     </div>
   </div>
@@ -176,10 +208,8 @@
       </section>
     </footer>
     <script src="/js/bootstrap.bundle.min.js"></script>
-    <script
-      src="https://kit.fontawesome.com/e60deed6f7.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/e60deed6f7.js" crossorigin="anonymous" ></script>
+    <script src="/js/bootstrap.js"></script>
   </body>
 </html>
  
