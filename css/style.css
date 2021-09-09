@@ -16,6 +16,14 @@
     }
   }
 
+@media all and (max-width:1021px){
+       .not-feed{
+         display: none;
+       }
+}
+  
+
+
 nav {
     font-family: 'Jockey One', sans-serif;
     font-size: 18px;
@@ -26,7 +34,24 @@ nav a:hover {
 }
 
 .titulo-feed{
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 50px;
+}
+
+.titulo-feed2{
   font-family: 'Jockey One', sans-serif;
+  font-size: 40px;
+  color: white;
+}
+
+
+.img-feed{
+  
+  background-image: url("/img/chaplin.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center ;
+  background-attachment: fixed;
 }
 
 .hvr-grow {
