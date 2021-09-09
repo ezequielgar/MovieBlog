@@ -13,7 +13,9 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap');
         </style>
- 
+ <style>
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+  </style>
     <title>Movie Blog</title>
   </head>
   <body>
@@ -76,10 +78,10 @@
       </nav>
     </header>
     <main class="bg-dark">
-      <div class="container-fluid">
+      
         <section class=" container-fluid text-center img-feed not-feed">
           <div class="row">
-            <div class="col-sm-6 col-md-12 ">
+            <div class="col-sm-6 col-md-12 titulo-feed mb-0">
   
               <h1 class="text-dark titulo-feed">MovieBlog  </h1>
             </div>
@@ -91,10 +93,36 @@
             
           </div>
         </section>
-      </div>
+        <section class="py-3">
+          <article class="container">
+          <div class="card mb-3 bg-ligth">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="https://i1.wp.com/cinefilosoficial.com/wp-content/uploads/2021/09/Captura-de-pantalla-2021-09-08-a-las-11.22.47.png?w=886&ssl=1" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Netflix reveló las primeras imágenes de “No miren arriba”, la película protagonizada por DiCaprio y Lawrence</h5>
+                  <p class="card-text">¿Qué hay que hacer para que el mundo gire la cabeza y decida mirar hacia arriba?.</p>
+                  <p class="card-text"><small class="text-muted">«No miren arriba» cuenta con guion y dirección del ganador del Óscar® Adam McKay («La gran apuesta»), y un elenco que también incluye a Mark Rylance, Ron Perlman, Timothée Chalamet, Ariana Grande, Scott Mescudi (Kid Cudi), Himesh Patel, Melanie Lynskey, Michael Chiklis y Tomer Sisley.</small></p>
+                  <button type="button" class="btn btn-danger text-center" data-bs-toggle="modal" data-bs-target="#modal1">+Info</button>
+                  <button type="button" class="btn btn-danger text-center" data-bs-toggle="modal" data-bs-target="#modalTrailer1">Trailer</button>
+                  
+                </div>
+              </div>
+            </div>
+
+          </div>
+          
+          
+          
+          
+        </article>
+        </section>
+        
         <div class="">
- 
-        <div id="carouselBlogEntr" class="carousel slide" data-bs-ride="carousel">
+          
+          <div id="carouselBlogEntr" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
                   <img src="/img/cine.jpg" class="d-block w-100" alt="...">
@@ -168,12 +196,117 @@
         
       </div>
       <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+        <!-- Modal Trailer 1-->
+        <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title text-center" id="modal1Label"><blockquote class="blockquote">
+                  <p>Don't Look Up</p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                  No miren arriba<cite title="Source Title"> (Dir. Adam McKay)</cite>
+                </figcaption></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                
+                <div class="accordion" id="accordionModal">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button class="accordion-button text-warning" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        ¿De qué va?
+                      </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionModal">
+                      <div class="accordion-body">
+                        <strong><i class="fas fa-film text-warning"></i></strong>
+                        La estudiante de astronomía Kate Dibiasky (Jennifer Lawrence) y su profesor, el Dr. Randall Mindy (Leonardo DiCaprio), hacen el descubrimiento asombroso de un asteroide que orbita dentro del sistema solar. El problema es que está a punto de colisionar con la Tierra. El otro problema es que a nadie parece importarle.
+
+                        Resulta que alertar a la humanidad sobre la colisión fatídica de una roca del tamaño del Monte Everest se considera una noticia inconveniente. Con la ayuda del Dr. Oglethorpe (Rob Morgan), Kate y Randall se embarcan en una gira mediática colosal que los lleva desde la oficina de la presidenta Orlean (Meryl Streep) —quien se mantiene indiferente— y su hijo adulador y jefe de gabinete Jason (Jonah Hill), hasta salir al aire en The Daily Rip, un animado programa matutino con los presentadores Brie (Cate Blanchett) y Jack (Tyler Perry). Tienen solo seis meses antes de que el asteroide haga impacto, y su misión de navegar el complicado ciclo de noticias de 24 horas y conseguir llamar la atención del público obsesionado con las redes sociales antes de que sea demasiado tarde demuestra ser más cómico de lo que imaginaron.
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                      <button class="accordion-button collapsed text-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Reparto
+                      </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionModal">
+                      <div class="accordion-body">
+                        <strong><i class="fas fa-theater-masks text-success"></i></strong> Leonardo DiCaprio como el Dr. Randall Mindy, un astrónomo;
+                        Jennifer Lawrence como la Dra. Kate Dibiasky, astrónoma;
+                        Rob Morgan como el Dr. Clayton "Teddy" Oglethorpe, un científico que ayuda a Dibiasky y Mindy en su búsqueda;
+                        Jonah Hill como Jason Orlean, hijo del presidente Orlean y jefe de personal;
+                        Mark Rylance como Peter Isherwell;
+                        Tyler Perry como Jack Bremmer;
+                        Ron Perlman como el coronel Ben Drask;
+                        Timothée Chalamet como Quentin;
+                        Ariana Grande como Riley Bina;
+                        Scott Mescudi como DJ Chello;
+                        Cate Blanchett como Brie Evantee;
+                        Meryl Streep como presidenta Janie Orlean;
+                        Himesh Patel como Phillip;
+                        Matthew Perry;
+                        Chris Evans;
+                        Tomer Sisley como Adul Grelio;
+                        Melanie Lynskey como June;
+                        Gina Gershon;
+                        Michael Chiklis como Dan Pawketty, un conservador parlante.;
+                        Paul Guilfoyle como General Themes, Presidente del Estado Mayor Conjunto. ;</div>
+                    </div>
+                  </div>
+                 
+                </div>
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div> 
+
+
+
+        <!-- Modal Trailer 1 -->
+<div class="modal fade" id="modalTrailer1" tabindex="-1" aria-labelledby="modalTrailer1Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content bg-dark">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalTrailer1Label"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       
+        <iframe class="w-100"  src="https://www.youtube.com/embed/YjM-v3T_PFw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+      </div>
+      <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         
       </div>
     </div>
   </div>
 </div>
+        
+
+
+
+
+
+
     <footer class="bg-dark text-secondary">
       <section class="container-fluid">
         <article class="row text-center">
@@ -226,6 +359,7 @@
     <script src="/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/e60deed6f7.js" crossorigin="anonymous" ></script>
     <script src="/js/bootstrap.js"></script>
+
   </body>
 </html>
  

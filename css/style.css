@@ -36,12 +36,13 @@ nav a:hover {
 .titulo-feed{
   font-family: "Yanone Kaffeesatz", sans-serif;
   font-size: 50px;
+  
 }
 
 .titulo-feed2{
   font-family: 'Jockey One', sans-serif;
   font-size: 40px;
-  color: white;
+  margin-top: -20px;
 }
 
 
@@ -52,6 +53,11 @@ nav a:hover {
   background-repeat: no-repeat;
   background-position: center ;
   background-attachment: fixed;
+}
+
+.modal-traile{
+  margin: 50px
+  
 }
 
 .hvr-grow {
