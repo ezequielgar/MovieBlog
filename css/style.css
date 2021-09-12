@@ -23,15 +23,50 @@
        }
 }
 
+@media (min-width: 300px) and (max-width: 767px) {
+  
+  .main-margin{
+    margin-top: 140px;
+  }
+  .main-margin-index{
+    margin-top: 155px;
+  }
+
+  
+}
+
+@media (min-width: 1225px) {
+  
+  .main-margin{
+    margin-top: 225px;
+  }
+  .main-margin-index{
+    margin-top: 140px;
+  }
+  
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .main-margin{
+    margin-top: 225px;
+  }
+  .main-margin-index{
+    margin-top: 140px;
+  }
+
+}
+
 
   
 
-  
+
 
 
 nav {
     font-family: 'Jockey One', sans-serif;
     font-size: 18px;
+    
 }
 
 nav a:hover {
