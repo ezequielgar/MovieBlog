@@ -18,7 +18,7 @@
   </style>
     <title>Movie Blog</title>
   </head>
-  <body class="">
+  <body class="imagen-1">
     <header>
       <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark ">
         <div class="container-fluid img-responsive">
@@ -77,141 +77,151 @@
         </div>
       </nav>
     </header>
-<body class="imagen-1">
-      <div class="login-container">
-          <div class="login-info-container pt-5">
-            <h1 class="title">Iniciar sesión</h1>
-            <form class="inputs-container">
-                <label for="Username" class="label-1">Username</label>
-                <input class="input form-control" id="Username" type="text" required minlength="4" maxlength="30" placeholder="Ingrese su nombe">
-                <label for="password" class="label-1">Password</label>
-                <input class="input form-control" id="password" type="password" required minlength="4" maxlength="30" placeholder="Ingrese su contraseña">
-                <p class="blanco-p ">¿Hás olvidado su contraseña? <span class="span">Click here</span></p>
-                <button class="btn-1">login</button>
-                <p class="blanco-p">¿Todavía no tienes una cuenta?</p> <span class="span">Crear ahora</span></p>
-            </form>
-            <p class="blanco-p">Iniciar sesión con</p>
-            <div class="social-login">
-                <div class="social-login-element">
-                    <i class="fab fa-google"></i>         
-                    <span class="span-2">Google</span>
-                </div>
-                <div class="social-login-element">
-                    <i class="fab fa-facebook-f"></i>
-                    <span class="span-2">Facebook</span>
-                </div>
+    <main class="main-margin-login">
+
+      
+      <div class="login-container login-text-decoration">
+        <div class="login-info-container pt-5">
+          <h1 class="title">Iniciar sesión</h1>
+          <form class="inputs-container">
+            <label for="Username" class="label-1">Username</label>
+            <input class="input form-control" id="Username" type="text" required minlength="4" maxlength="30" placeholder="Ingrese su nombe">
+            <label for="password" class="label-1">Password</label>
+            <input class="input form-control" id="password" type="password" required minlength="4" maxlength="30" placeholder="Ingrese su contraseña">
+            
+            <p class="blanco-p ">¿Hás olvidado su contraseña? <span class="span"><a href="/img/404.png">Click here </a> </span></p>
+            <button class="btn-1">login</button>
+            <p class="blanco-p">¿Todavía no tienes una cuenta?</p> <span class="span"><a href="/img/404.png">  Crear ahora </a></span></p>
+          </form>
+          <p class="blanco-p">Iniciar sesión con</p>
+          <div class="social-login">
+            <div class="social-login-element">
+              <i class="fab fa-google"></i>         
+              <a href="https://www.google.com/?hl=es" target="_blank">
+                <span class="span-2">Google</span>
+              </a>
+            </div>
+            <div class="social-login-element">
+              <i class="fab fa-facebook-f"></i>
+              <a href="https://es-la.facebook.com/" target="_blank">
+                <span class="span-2">Facebook</span>
+              </a>
             </div>
           </div>
-          <img class="image-container " src="../images/login.png" alt="login imagen">
-      </div>
-       <!-- Modal -->
-<div class="modal fade" id="modalnavbar" tabindex="-1" aria-labelledby="modalnavbarLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="modalnavbarLabel">MovieBlog</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
-  
-          <form>
-            <div class="mb-3">
-              <p class="lead">Creación de tu cuenta</p>
-              <label for="suscrip-email" class="form-label">Email</label>
-              <input type="email" class="form-control" id="suscrip-email" required maxlength="45" minlength="5">
-              <div id="emailHelp" class="form-text">Nunca compartiremos tu información con otros.</div>
-            </div>
-            <div class="mb-3">
-              <label for="suscrip-pass" class="form-label">Password</label>
-              <input type="password" class="form-control" id="suscrip-pass" required maxlength="12" minlength="8">
-            </div>
-            <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Recibir notificaciones por email</label>
-            </div>
-            
-            <button type="submit" class="btn btn-warning" id="liveToastBtn">Crear cuenta</button>
-  
-            <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
-              <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-                <div class="toast-header">
-                  
-                  <strong class="me-auto">MovieBlog</strong>
-                  <small>Bienvenido</small>
-                  <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-                </div>
-                <div class="toast-body">
-                  Verifica tu correo para completar la suscripción.
-                </div>
+        <img class="image-container " src="/img/login.png" alt="login imagen">
+      </div>
+
+
+    </main>
+<!-- Modal -->
+<div class="modal fade" id="modalnavbar" tabindex="-1" aria-labelledby="modalnavbarLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalnavbarLabel">MovieBlog</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+        <form>
+          <div class="mb-3">
+            <p class="lead">Creación de tu cuenta</p>
+            <label for="suscrip-email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="suscrip-email" required maxlength="45" minlength="5">
+            <div id="emailHelp" class="form-text">Nunca compartiremos tu información con otros.</div>
+          </div>
+          <div class="mb-3">
+            <label for="suscrip-pass" class="form-label">Password</label>
+            <input type="password" class="form-control" id="suscrip-pass" required maxlength="12" minlength="8">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Recibir notificaciones por email</label>
+          </div>
+          
+          <button type="submit" class="btn btn-warning" id="liveToastBtn">Crear cuenta</button>
+
+          <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+            <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+              <div class="toast-header">
+                
+                <strong class="me-auto">MovieBlog</strong>
+                <small>Bienvenido</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+              </div>
+              <div class="toast-body">
+                Verifica tu correo para completar la suscripción.
               </div>
             </div>
-  
-          </form>
-          
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          
-        </div>
+          </div>
+
+        </form>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        
       </div>
     </div>
   </div>
-      <footer class="bg-dark text-secondary p-4">
-        <section class="container-fluid">
-          <article class="row text-center">
-            <div class="col-sm-12 col-md-4">
-              <h4>Seguinos en nuestras redes</h4>
-              <div class="row">
-                <div class="mt-2 mb-4">
-                  <a href="">
-                    <i class="fab fa-instagram fa-2x text-secondary m-1"></i>
-                  </a>
-                  <a href="">
-                    <i class="fab fa-facebook fa-2x text-secondary m-1"></i>
-                  </a>
-                  <a href="">
-                    <i class="fab fa-twitter fa-2x text-secondary m-1"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-  
-            <div class="col-sm-12 col-md-4">
-              <h4>Descarga nuesta App</h4>
-  
-              <h1 class="logo-font-resp">MovieBlog</h1>
-              <img
-                src="/images/badge-apple-store.svg"
-                alt="logo apple store"
-                class="mb-4"
-                width="150"
-              />
-              <img
-                src="/images/google-play-badge-bb.svg"
-                alt="logo google play"
-                class="mb-4"
-                width="150"
-              />
-            </div>
-  
-            <div class="col-sm-12 col-md-4">
-              <a href="./index.html">
-                <img
-                  src="/images/logo.png"
-                  alt="logo"
-                  class="img-responsive rotate"
-                  width="100"
-                />
-              </a>
-            </div>
-          </article>
-        </section>
-      </footer>
-      <script src="../js/bootstrap.bundle.min.js"></script>
-      <script
-        src="https://kit.fontawesome.com/e60deed6f7.js"
-        crossorigin="anonymous"
-      ></script>
-      <script src="../js/bootstrap.js"></script>
+</div>
+
+
+<footer class="bg-dark text-secondary ">
+  <section class="container-fluid">
+    <article class="row text-center">
+      <div class="col-sm-12 col-md-4">
+          <h4>Seguinos en nuestras redes</h4>
+        <div class="row">
+          <div class="mt-2 mb-4">
+            <a href="https://www.instagram.com/" target="_blank">
+              <i class="fab fa-instagram fa-2x text-secondary m-1"></i>
+            </a>
+            <a href="https://www.facebook.com/" target="_blank">
+              <i class="fab fa-facebook fa-2x text-secondary m-1"></i>
+            </a>
+            <a href="https://twitter.com/?lang=es" target="_blank">
+              <i class="fab fa-twitter fa-2x text-secondary m-1"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-md-4">
+          <h4>Descarga nuesta App</h4>
+
+        <h1 class="logo-font-resp">MovieBlog</h1>
+        <img
+          src="/img/badge-apple-store.svg"
+          alt="logo apple store"
+          class="mb-4" width="150"
+        />
+        <img
+          src="/img/google-play-badge-bb.svg"
+          alt="logo google play"
+          class="mb-4" width="150"
+        />
+      </div>
+
+      <div class="col-sm-12 col-md-4">
+        <a href="/index.html">
+          <img
+            src="/img/logo.png"
+            alt="logo"
+            class="img-responsive rotate"
+            width="100"
+          />
+        </a>
+      </div>
+    </article>
+  </section>
+</footer>
+<script src="/js/bootstrap.bundle.min.js"></script>
+<script src="https://kit.fontawesome.com/e60deed6f7.js" crossorigin="anonymous" ></script>
+<script src="/js/bootstrap.js"></script>
+
 </body>
 </html>
+
+
