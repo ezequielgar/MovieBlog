@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Movie Blog" />
+    <meta name="keywords" content="Movie peliculas criticas reseña" />
+    <meta name="author" content="Equipo2" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <style>@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@600&display=swap");</style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap');
+        </style>
+ <style>
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+  </style>
+    <title>Movie Blog</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg fixed navbar-dark bg-dark">
+        <div class="container-fluid img-responsive">
+          <a class="hvr-grow logo-font-resp" href="/index.html">
+            <img
+              src="/img/logo.png"
+              alt="logo movieblog"
+              width="100"
+              class=""
+            />MovieBlog
+          </a>
+ 
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon text-center"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item px-2 ">
+                <a href="/pages/login.html" class="nav-link">
+                  <button type="button" class="btn btn-outline-light">
+                    Iniciar sesión
+                  </button>
+                </a>
+                
+              </li>
+              <li class="nav-item px-2">
+                <div class="nav-link">
+                  <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#modalnavbar">
+                    Suscripción
+                  </button>
+                </div>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link" href="/pages/contact.html">
+                  <button type="button" class="btn btn-outline-light">
+                    Contacto
+                  </button>
+                </a>
+              </li>
+              
+              <li class="nav-item px-2">
+                <a class="nav-link" href="./pages/about.html">
+                  <button type="button" class="btn btn-outline-light">Acerca de Nosotros</button>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="bg-dark">
+
+        <main class="img">
+            <div class="formulario p-3 container ">
+              <article class="row form">
+                <div class="col-sm-12 col-md-6 mb-3">
+                  <form>
+                    <div class="mb-3">
+                      <h3 class="text-white contacto text-center">Contacto</h3>
+                      <label for="nombreApellido" class="form-label text-white contacto"
+                        >Nombre y Apellido</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control tex"X-UA-Compatible
+                        id="nombreApellido"
+                        required
+                        placeholder="Nombre y Apellido"
+                        maxlength="50"
+                        minlength="3"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="email" class="form-label text-white contacto">Email</label>
+                      <input
+                        type="email"
+                        id="email"
+                        placeholder="mail@mail.com"
+                        class="form-control"
+                        required
+                        maxlength="40"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="consulta" class="form-label text-white contacto"
+                        >Consulta</label
+                      >
+                      <textarea
+                        id="consulta"
+                        rows="4"
+                        class="form-control"
+                        minlength="3"
+                        placeholder="escriba aqui su comentario"
+                        maxlength="250"
+                        required
+                      ></textarea>
+                    </div>
+                    <button class="btn btn-danger contacto" type="submit">Enviar</button>
+                  </form>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.102370777529!2d-65.20939048545092!3d-26.836696096500628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d3ad7f30f1d%3A0xf8606cd659b8e3e4!2sRollingCode%20School!5e0!3m2!1ses!2sar!4v1630333058867!5m2!1ses!2sar"
+                    class="w-100 mapa"
+                    height="450"
+                    allowfullscreen=""
+                    loading="lazy"
+                  ></iframe>
+                </div>
+              </article>
+            </div>
+      
+      
+    </main>
+ 
+    <!-- Modal -->
+<div class="modal fade" id="modalnavbar" tabindex="-1" aria-labelledby="modalnavbarLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalnavbarLabel">MovieBlog</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+        <form>
+          <div class="mb-3">
+            <p class="lead">Creación de tu cuenta</p>
+            <label for="suscrip-email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="suscrip-email" required maxlength="45" minlength="5">
+            <div id="emailHelp" class="form-text">Nunca compartiremos tu información con otros.</div>
+          </div>
+          <div class="mb-3">
+            <label for="suscrip-pass" class="form-label">Password</label>
+            <input type="password" class="form-control" id="suscrip-pass" required maxlength="12" minlength="8">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Recibir notificaciones por email</label>
+          </div>
+          
+          <button type="submit" class="btn btn-warning" id="liveToastBtn">Crear cuenta</button>
+
+          <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+            <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+              <div class="toast-header">
+                
+                <strong class="me-auto">MovieBlog</strong>
+                <small>Bienvenido</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+              </div>
+              <div class="toast-body">
+                Verifica tu correo para completar la suscripción.
+              </div>
+            </div>
+          </div>
+
+        </form>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+    <footer class="bg-dark text-secondary">
+      <section class="container-fluid">
+        <article class="row text-center">
+          <div class="col-sm-12 col-md-4">
+              <h4>Seguinos en nuestras redes</h4>
+            <div class="row">
+              <div class="mt-2 mb-4">
+                <a href="">
+                  <i class="fab fa-instagram fa-2x text-secondary m-1"></i>
+                </a>
+                <a href="">
+                  <i class="fab fa-facebook fa-2x text-secondary m-1"></i>
+                </a>
+                <a href="">
+                  <i class="fab fa-twitter fa-2x text-secondary m-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+ 
+          <div class="col-sm-12 col-md-4">
+              <h4>Descarga nuesta App</h4>
+ 
+            <h1 class="logo-font-resp">MovieBlog</h1>
+            <img
+              src="/img/badge-apple-store.svg"
+              alt="logo apple store"
+              class="mb-4" width="150"
+            />
+            <img
+              src="/img/google-play-badge-bb.svg"
+              alt="logo google play"
+              class="mb-4" width="150"
+            />
+          </div>
+ 
+          <div class="col-sm-12 col-md-4">
+            <a href="./index.html">
+              <img
+                src="/img/logo.png"
+                alt="logo"
+                class="img-responsive rotate"
+                width="100"
+              />
+            </a>
+          </div>
+        </article>
+      </section>
+    </footer>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/e60deed6f7.js" crossorigin="anonymous" ></script>
+    <script src="/js/bootstrap.js"></script>
+
+  </body>
+</html>
+ 
+
