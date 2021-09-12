@@ -17,19 +17,22 @@
     <title>Movie Blog</title>
   </head>
   <body>
-    <header>
-      <nav class="navbar navbar-expand-lg fixed navbar-dark bg-dark">
-        <div class="container-fluid img-responsive">
-          <a class="hvr-grow logo-font-resp" href="/index.html">
-            <img
+    <header class="bg-dark">
+      <section class="container-fluid">
+
+        
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+          <div class="container img-responsive">
+            <a class="hvr-grow logo-font-resp" href="/index.html">
+              <img
               src="/img/logo.png"
               alt="logo movieblog"
               width="100"
               class=""
-            />MovieBlog
-          </a>
-
-          <button
+              />MovieBlog
+            </a>
+            
+            <button
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
@@ -37,7 +40,7 @@
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
             aria-label="Toggle navigation"
-          >
+            >
             <span class="navbar-toggler-icon text-center"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -74,13 +77,176 @@
           </div>
         </div>
       </nav>
+    </section>
     </header>
     <main>
-      <div class="text-center bg-dark">
-
-        <img src="/img/cine.jpg" alt="imagen de cine" class="img-fluid w-100" >
-      </div>
       
+    <section>
+        <div id="slider-index" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/re.jpg" class="d-block w-100 slider" alt="resident evil reboot - estreno septiembre">
+            </div>
+            <div class="carousel-item">
+              <img src="img/blackwidow.jpg" class="d-block w-100 slider" alt="marvel black widow reseña">
+            </div>
+            <div class="carousel-item">
+              <img src="img/shangchi.jpg" class="d-block w-100 slider" alt="marvel estreno shang-chi y los 10 anillis de poder">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#slider-index" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#slider-index" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <section class="row bg-dark">
+        <div class="col-sm-12 col-md-6 my-2">
+          <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+              <div class="card bg-dark text-light">
+                <img
+                  src="img/matrix 4 def.png"
+                  class="card-img-top"
+                  alt="the matrix resurrection imagen , trailer"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">The Matrix : Resurrection</h5>
+                  <p class="card-text">
+                    The Matrix Estrena su trailer y aca te contamos todo.
+                  </p>
+                  <a href="pages/blogentry.html" class="btn btn-danger">Ver Mas</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card bg-dark text-light">
+                <img
+                  src="img/no mires def.png"
+                  class="card-img-top"
+                  alt="netflix-no mires hacia arriba-comedia"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Reseña: No mires hacia arriba</h5>
+                  <p class="card-text">
+                    Netflix estreno hace poco "No mires hacia arriba".
+                  </p>
+                  <a href="#" class="btn btn-danger">Ver Mas</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card bg-dark text-light">
+                <img
+                  src="img/dune def.png"
+                  class="card-img-top"
+                  alt="dune pelicula "
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Dune : 2021</h5>
+                  <p class="card-text">La franquicia de Dune se renueva.</p>
+                  <a href="#" class="btn btn-danger">Ver Mas</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <nav aria-label="..." class="d-flex justify-content-start">
+            <ul class="pagination">
+              <li class="page-item disabled">
+                <a class="page-link">Previous</a>
+              </li>
+              <li class="page-item active" aria-current="page">
+                <a class="page-link" href="#">1</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">2</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-sm-12 col-md-6 my-2 mt-3">
+          <div class="row">
+            <div class="col-sm-12 col-md-12">
+              <form class="d-flex container">
+                <input
+                  class="form-control"
+                  type="search"
+                  placeholder="Buscar"
+                  aria-label="Buscar"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Buscar
+                </button>
+              </form>
+            </div>
+            <div class="col-sm-12 col-md-6 categorias text-light mt-3">
+              <p class="fs-1">Categorias</p>
+              <ul>
+                <li>
+                  <a href="">Terror</a>
+                </li>
+                <li>
+                  <a href="#">Comedia</a>
+                </li>
+                <li>
+                  <a href="#">Historicas</a>
+                </li>
+                <li>
+                  <a href="#">Romanticas</a>
+                </li>
+                <li>
+                  <a href="#">Drama</a>
+                </li>
+                <li>
+                  <a href="#">Super Heroes</a>
+                </li>
+                <li>
+                  <a href="#">Series</a>
+                </li>
+                <li>
+                  <a href="#">Accion</a>
+                </li>
+                <li>
+                  <a href="#">Animadas</a>
+                </li>
+                <li>
+                  <a href="#">Suspenso</a>
+                </li>
+                <li>
+                  <a href="#">Familiares</a>
+                </li>
+                <li>
+                  <a href="#">Musicales</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-12 col-md-6 mt-4">
+              <img
+                src="img/banner.jpg"
+                class="cartel-publicidad w-75"
+                alt="cartel-publicidad"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container text-center img-feed not-feed">
+        <div class="row">
+          <div class="col-sm-6 col-md-12 titulo-feed mb-0">
+            <h1 class="text-dark titulo-feed">MovieBlog</h1>
+          </div>
+        </div>
+      </section>
+     
 
 
       
