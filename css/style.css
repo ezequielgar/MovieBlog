@@ -5,6 +5,10 @@
     text-decoration: none;
     font-size: 3.25rem;
   }
+
+  .cartel-publicidad {
+    display: none;
+  }
   
 }
 
@@ -15,6 +19,7 @@
       color: white;
       text-decoration: none;
     }
+   
   }
 
 @media all and (max-width:1021px){
@@ -31,7 +36,13 @@
   .main-margin-index{
     margin-top: 155px;
   }
-
+  .main-margin-about{
+    margin-top: 180px;
+  }
+  .main-margin-galery{
+    margin-top: 160px;
+  }
+  
   
 }
 
@@ -43,6 +54,12 @@
   .main-margin-index{
     margin-top: 140px;
   }
+  .main-margin-about{
+    margin-top: 180px;
+  }
+  .main-margin-galery{
+    margin-top: 180px;
+  }
   
 }
 
@@ -53,6 +70,12 @@
   }
   .main-margin-index{
     margin-top: 140px;
+  }
+  .main-margin-about{
+    margin-top: 180px;
+  }
+  .main-margin-galery{
+    margin-top: 180px;
   }
 
 }
@@ -161,6 +184,8 @@ footer a {
 
 /* Contacto Valentin CSS
 
+
+
 @media all and (max-width: 700px) {
   .logo-font-resp {
     font-family: "Yanone Kaffeesatz", sans-serif;
@@ -262,6 +287,9 @@ footer a {
 } */
 
 /* ---------------------------------------- */
+.mapa{
+  border-radius: 2%;
+}
 
 /* Index Juan Pablo CSS
 
@@ -352,11 +380,13 @@ footer a {
  */ 
 
 /* about emilce css */
-/* 
-div img{
+
+
+.img-nosotros-rounded{
   border-radius: 50%;
   filter: saturate(100%);
-} */
+  
+}
 
 /* login axel css */
 
@@ -597,6 +627,58 @@ i{
     }
 } */
 
+galeria sol css 
+
+.fondo-galeria{
+  background-image: url(/img/Galeria/minimalism-cinema-4d-cube-black-wallpaper-preview.jpg);
+  width: 100%;
+  height: 100%;
+}
+
+.movieblog{
+  font-family: 'Jockey One', sans-serif;
+  color: white  
+}
+.tipografia{
+  font-family: 'Jockey One', sans-serif;
+}
+.logogaleria{
+  width: 8%;
+}
+/*.logo2{
+  width: 20%;
+}*/
+ footer{
+  padding: 30px;
+ color: grey;
+ margin: 0px;
+} 
+.fila{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+
+
+/*.nav2{
+  position: fixed;
+}*/
+
+.divimg {
+  width: 50%;
+  border-radius: 10%;
+  box-shadow: 3px 3px 20px grey;
+  filter: blur(0px);
+}
+/*img:hover{
+  position: relative;
+  bottom: 5px;
+  left: 3px;
+  filter: blur(4px);
+  filter: opacity(40%);
+
+}*/
 
 
 

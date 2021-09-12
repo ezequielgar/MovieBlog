@@ -1,0 +1,1282 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Movie Blog" />
+    <meta name="keywords" content="Movie peliculas criticas reseña" />
+    <meta name="author" content="Equipo2" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <style>@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@600&display=swap");</style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap');
+        </style>
+ <style>
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+  </style>
+    <title>Movie Blog</title>
+  </head>
+  <body class="bg-dark">
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark ">
+        <div class="container-fluid img-responsive">
+          <a class="hvr-grow logo-font-resp" href="/index.html">
+            <img
+              src="/img/logo.png"
+              alt="logo movieblog"
+              width="100"
+              class=""
+            />MovieBlog
+          </a>
+ 
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon text-center"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item px-2 ">
+                <a href="/pages/login.html" class="nav-link">
+                  <button type="button" class="btn btn-outline-light">
+                    Iniciar sesión
+                  </button>
+                </a>
+                
+              </li>
+              <li class="nav-item px-2">
+                <div class="nav-link">
+                  <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#modalnavbar">
+                    Suscripción
+                  </button>
+                </div>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link" href="/pages/contact.html">
+                  <button type="button" class="btn btn-outline-light">
+                    Contacto
+                  </button>
+                </a>
+              </li>
+              
+              <li class="nav-item px-2">
+                <a class="nav-link" href="/pages/about.html">
+                  <button type="button" class="btn btn-outline-light">Acerca de Nosotros</button>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class=" main-margin-galery bg-dark">
+      <h1 class="display-2 movieblog text-center mb-2 strong">
+        GALERIA DE RESEÑAS
+      </h1>
+      <article class="row container-fluid">
+        <div class="col-sm-12 col-md-4 col-lg-3 my-4 text-center">
+          <div>
+            <img class="divimg" src="/img/Galeria/descarga.jpg" alt="matrix flyer" />
+            <div class="card-body">
+              <i class="fas fa-star text-white"></i>
+              <i class="fas fa-star text-white"></i>
+              <i class="fas fa-star text-white"></i>
+              <i class="fas fa-star text-white"></i>
+              <i class="fas fa-star text-white"></i>
+              <h5 class="card-title text-white tipografia display-6">Matrix</h5>
+              <a
+                class="btn btn-danger"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#ModalReseña"
+                href="#"
+                >ver mas</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-3 my-4 text-center">
+          <div>
+            <img
+              class="divimg w-5%"
+              src="/img/Galeria/descarga 3.jpg"
+              alt="titanic flyer"
+            />
+            <div class="card-body">
+              <i class="fas fa-star text-white"></i>
+              <i class="fas fa-star text-white"></i>
+              <i class="fas fa-star text-white"></i>
+              <i class="fas fa-star text-white"></i>
+              <h5 class="card-title text-white tipografia display-6">
+                Titanic
+              </h5>
+              <a
+                class="btn btn-danger"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#ModalReseña2"
+                href="#"
+                >ver mas</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-3 my-4 text-center">
+          <div>
+            <img class="divimg" src="/img/Galeria/descarga 2.jpg" alt="Cruella flyer" />
+            <div class="card-body">
+              <i class="fas fa-star text-white"></i>
+              <i class="fas fa-star text-white"></i>
+              <i class="fas fa-star text-white"></i>
+              <h5 class="card-title text-white tipografia display-6">
+                Cruella
+              </h5>
+              <a
+                class="btn btn-danger"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#ModalReseña3"
+                href="#"
+                >ver mas</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-3 my-4 text-center">
+          <div>
+            <img
+              class="divimg"
+              src="/img/Galeria/descarga (9).jpg"
+              alt="fight club flyer"
+            />
+            <div class="card-body">
+              <i class="fas fa-star text-white"></i>
+              <i class="fas fa-star text-white"></i>
+              <i class="fas fa-star text-white"></i>
+              <h5 class="card-title text-white tipografia display-6">
+                Fight club
+              </h5>
+              <a
+                class="btn btn-danger"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#ModalReseña4"
+                href="#"
+                >ver mas</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-3 my-4 text-center">
+          <div>
+            <img
+              class="divimg"
+              src="/img/Galeria/images (1).jpg"
+              alt="the forest grump flyer"
+            />
+            <div class="card-body">
+              <i class="fas fa-star text-white"></i>
+              <i class="fas fa-star text-white"></i>
+              <i class="fas fa-star text-white"></i>
+              <i class="fas fa-star text-white"></i>
+              <i class="fas fa-star text-white"></i>
+              <h5 class="card-title text-white tipografia display-6">
+                The forest grump
+              </h5>
+              <a
+                class="btn btn-danger"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#ModalReseña5"
+                href="#"
+                >ver mas</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-3 my-4 text-center">
+          <div>
+            <img
+              class="divimg"
+              src="/img/Galeria/images (2).jpg"
+              alt="Hombres de negro flyer"
+            />
+            <div class="card-body">
+              <i class="fas fa-star text-white"></i>
+              <i class="fas fa-star text-white"></i>
+              <i class="fas fa-star text-white"></i>
+              <h5 class="card-title text-white tipografia display-6">
+                Hombres de negro
+              </h5>
+              <a
+                class="btn btn-danger"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#ModalReseña6"
+                href="#"
+                >ver mas</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-3 my-4 text-center">
+          <div>
+            <img
+              class="divimg"
+              src="/img/Galeria/images (3).jpg"
+              alt="El padrino flyer"
+            />
+            <div class="card-body">
+              <i class="fas fa-star text-white"></i>
+              <i class="fas fa-star text-white"></i>
+              <i class="fas fa-star text-white"></i>
+              <i class="fas fa-star text-white"></i>
+              <i class="fas fa-star text-white"></i>
+              <h5 class="card-title text-white tipografia display-6">
+                El padrino
+              </h5>
+              <a
+                class="btn btn-danger"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#ModalReseña7"
+                href="#"
+                >ver mas</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-3 my-4 text-center">
+          <div>
+            <img class="divimg" src="/img/Galeria/images (4).jpg" alt="Mulan Flyer" />
+            <div class="card-body">
+              <i class="fas fa-star text-white"></i>
+              <i class="fas fa-star text-white"></i>
+              <i class="fas fa-star text-white"></i>
+              <i class="fas fa-star text-white"></i>
+              <h5 class="card-title text-white tipografia display-6">Mulan</h5>
+              <a
+                class="btn btn-danger"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#ModalReseña8"
+                href="#"
+                >ver mas</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-3 my-4 text-center">
+          <div>
+            <img
+              class="divimg"
+              src="/img/Galeria/descarga (7).jpg"
+              alt="Terminator Flyer"
+            />
+            <div class="card-body">
+              <i class="fas fa-star text-white"></i>
+              <i class="fas fa-star text-white"></i>
+              <h5 class="card-title text-white tipografia display-6">
+                Terminator
+              </h5>
+              <a
+                class="btn btn-danger"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#ModalReseña9"
+                href="#"
+                >ver mas</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-3 my-4 text-center">
+          <div>
+            <img class="divimg" src="/img/Galeria/descarga (4).jpg" alt="seven flyer" />
+            <div class="card-body">
+              <i class="fas fa-star text-white"></i>
+              <i class="fas fa-star text-white"></i>
+              <i class="fas fa-star text-white"></i>
+              <i class="fas fa-star text-white"></i>
+              <i class="fas fa-star text-white"></i>
+              <h5 class="card-title text-white tipografia display-6">Seven</h5>
+              <a
+                class="btn btn-danger"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#ModalReseña10"
+                href="#"
+                >ver mas</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-3 my-4 text-center">
+          <div>
+            <img
+              class="divimg"
+              src="/img/Galeria/descarga (8).jpg"
+              alt="star wars flyer"
+            />
+            <div class="card-body">
+              <i class="fas fa-star text-white"></i>
+              <i class="fas fa-star text-white"></i>
+              <i class="fas fa-star text-white"></i>
+              <i class="fas fa-star text-white"></i>
+              <h5 class="card-title text-white tipografia display-6">
+                Star Wars
+              </h5>
+              <a
+                class="btn btn-danger"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#ModalReseña11"
+                href="#"
+                >ver mas</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-3 my-4 text-center">
+          <div>
+            <img
+              class="divimg"
+              src="/img/Galeria/descarga (6).jpg"
+              alt="pelicula yentl flyer"
+            />
+            <div class="card-body">
+              <i class="fas fa-star text-white"></i>
+              <i class="fas fa-star text-white"></i>
+              <i class="fas fa-star text-white"></i>
+              <h5 class="card-title text-white tipografia display-6">Yentl</h5>
+              <a
+                class="btn btn-danger"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#ModalReseña12"
+                href="#"
+                >ver mas</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-3 my-4 text-center">
+          <div>
+            <img class="divimg" src="/img/Galeria/descarga 10.jpg" alt="Dracula flyer" />
+            <div class="card-body">
+              <i class="fas fa-star text-white"></i>
+              <i class="fas fa-star text-white"></i>
+              <i class="fas fa-star text-white"></i>
+              <i class="fas fa-star text-white"></i>
+              <h5 class="card-title text-white tipografia display-6">
+                Dracula
+              </h5>
+              <a
+                class="btn btn-danger"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#ModalReseña13"
+                href="#"
+                >ver mas</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-3 my-4 text-center">
+          <div>
+            <img
+              class="divimg"
+              src="/img/Galeria/descarga 11.jpg"
+              alt="Footloose flyer"
+            />
+            <div class="card-body">
+              <i class="fas fa-star text-white"></i>
+              <i class="fas fa-star text-white"></i>
+              <i class="fas fa-star text-white"></i>
+              <i class="fas fa-star text-white"></i>
+              <h5 class="card-title text-white tipografia display-6">
+                footlose
+              </h5>
+              <a
+                class="btn btn-danger"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#ModalReseña14"
+                href="#"
+                >ver mas</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-3 my-4 text-center">
+          <div>
+            <img
+              class="divimg"
+              src="/img/Galeria/descarga 12.jpg"
+              alt="Los miserables Flyer"
+            />
+            <div class="card-body">
+              <i class="fas fa-star text-white"></i>
+              <i class="fas fa-star text-white"></i>
+              <i class="fas fa-star text-white"></i>
+              <i class="fas fa-star text-white"></i>
+              <i class="fas fa-star text-white"></i>
+              <h5 class="card-title text-white tipografia display-6">
+                Los miserables
+              </h5>
+              <a
+                class="btn btn-danger"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#ModalReseña15"
+                href="#"
+                >ver mas</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-3 my-4 text-center">
+          <div>
+            <img
+              class="divimg"
+              src="/img/Galeria/descarga 13.jpg"
+              alt="the x men flyer"
+            />
+            <div class="card-body">
+              <i class="fas fa-star text-white"></i>
+              <i class="fas fa-star text-white"></i>
+              <i class="fas fa-star text-white"></i>
+              <h5 class="card-title text-white tipografia display-6">
+                The X men
+              </h5>
+              <a
+                class="btn btn-danger"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#ModalReseña16"
+                href="#"
+                >ver mas</a
+              >
+            </div>
+          </div>
+        </div>
+      </article>
+      <section class="container-fluid text-center img-feed not-feed">
+        <div class="row">
+          <div class="col-sm-6 col-md-12 titulo-feed mb-0">
+            <h1 class="text-dark titulo-feed">MovieBlog</h1>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="ModalReseña"
+      tabindex="-1"
+      aria-labelledby="Reseña"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog bg-dark">
+        <div class="modal-content">
+          <div class="modal-header bg-black text-danger bg-black text-danger">
+            <h5 class="modal-title tipografia" id="Reseña">Matrix</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body bg-black text-white">
+            <p>
+              Matrix es una paradoja. Crítica a un mundo hipertecnificado que
+              hace uso de la tecnología como principal reclamo comercial. El
+              mundo real no es más que una construcción de códigos binarios,
+              plasma de manera directa todas las criticas sociales, politicas y
+              humanitarias que vivimos en nuestra realidad. Mi puntuacion ante
+              esta pelicula es 5/5.
+            </p>
+          </div>
+          <div class="modal-footer bg-black text-white bg-black text-white">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--modal 2-->
+    <div
+      class="modal fade"
+      id="ModalReseña2"
+      tabindex="-1"
+      aria-labelledby="Reseña"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-black text-danger">
+            <h5 class="modal-title tipografia" id="Reseña">Titanic</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body bg-black text-white">
+            <p>
+              La película está bien lograda, tiene buenos efectos, el enorme
+              barco, la representación de una tragedia y todo lo que implica
+              ello, con los miles de extras desesperados; que también nos
+              muestran las diferencias sociales de la época, con los de primera
+              y tercera clase y cuenta con una trama muy interesante que hace
+              que casi las 3 horas y media de duración se vayan volando. Aunque
+              la película se filmó un tiempo atrás sigue teniendo gran
+              importancia en la actualidad. Las impresionantes actuaciones de
+              Leonardo DiCaprio y de Kate Winslet hicieron esta historia de
+              drama, amor y tristeza mucho más cautivador. Mi puntuacion ante
+              esta pelicula es 4/5.
+            </p>
+          </div>
+          <div class="modal-footer bg-black text-white">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--modal 3-->
+    <div
+      class="modal fade"
+      id="ModalReseña3"
+      tabindex="-1"
+      aria-labelledby="Reseña"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-black text-danger">
+            <h5 class="modal-title tipografia" id="Reseña">Cruella</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body bg-black text-white">
+            <p>
+              'Cruella' es un gran pasatiempo que toma un personaje mítico para
+              llevarlo completamente a su terreno en lugar de ser esclavo de la
+              obra original. Hace esto además con buen gusto, un plan claro y un
+              llamativo reparto encabezado por una arrolladora Emma Stone. Claro
+              que podría haber sido mejor, pero en estos casos estamos mucho más
+              acostumbrados a que suceda lo contrario.. Mi puntuacion ante esta
+              pelicula es 3/5.
+            </p>
+          </div>
+          <div class="modal-footer bg-black text-white">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--modal 4-->
+    <div
+      class="modal fade"
+      id="ModalReseña4"
+      tabindex="-1"
+      aria-labelledby="Reseña"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-black text-danger">
+            <h5 class="modal-title tipografia" id="Reseña">Fight club</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body bg-black text-white">
+            <p>
+              El club de la pelea, conocida también como El club de la lucha
+              (Fight club) es una película de 1999 dirigida por David Fincher.
+              No tuvo mucho éxito en taquilla, pero ha ocupado un lugar entre
+              las películas de culto. Su popularidad puede deberse a las
+              reflexiones que propone sobre la sociedad y su forma de vida. Se
+              trata de una adaptación cinematográfica de la novela homónima de
+              Chuck Palahniuk, publicada en 199. Mi puntuacion ante esta
+              pelicula es 4/5.
+            </p>
+          </div>
+          <div class="modal-footer bg-black text-white">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--modal 5-->
+    <div
+      class="modal fade"
+      id="ModalReseña5"
+      tabindex="-1"
+      aria-labelledby="Reseña"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-black text-danger">
+            <h5 class="modal-title tipografia" id="Reseña">the forest grump</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body bg-black text-white">
+            <p>
+              Este viaje a la nostalgia es una de las películas mejor valoradas
+              en foros y páginas web especializadas a día de hoy. Estamos ante
+              una cinta irrepetible e inolvidable que, posiblemente, se postula
+              como una de las más brillantes producciones de los 90, sino de la
+              historia del cine. Cuenta con un cúmulo de elementos que la
+              convierten en una autentica joya y que la convierten en un objeto
+              de culto y de valoración. Mi puntuacion es 5/5
+            </p>
+          </div>
+          <div class="modal-footer bg-black text-white">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--modal 6-->
+    <div
+      class="modal fade"
+      id="ModalReseña6"
+      tabindex="-1"
+      aria-labelledby="Reseña"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-black text-danger">
+            <h5 class="modal-title tipografia" id="Reseña">Hombres de negro</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body bg-black text-white">
+            <p>
+              Una de las mejores películas de los 90s, entretenida y divertida,
+              mezclando perfectamente acción,comedia y ciencia ficción, efectos
+              especiales que aún se ven bien más de 20 años después y un guión
+              simple pero efectivo que en menos de dos horas logra crear y
+              presentarnos de manera efectiva un mundo donde conviven los
+              humanos con extraterrestres y por supuesto Will Smith y Tommy Lee
+              Jones en su mejor nivel. Un clásico. Mi puntuacion ante esta
+              pelicula es 3/5.
+            </p>
+          </div>
+          <div class="modal-footer bg-black text-white">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--modal 7-->
+    <div
+      class="modal fade"
+      id="ModalReseña7"
+      tabindex="-1"
+      aria-labelledby="Reseña"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-black text-danger">
+            <h5 class="modal-title tipografia" id="Reseña">El padrino</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body bg-black text-white">
+            <p>
+              La mejor película que he visto, mejor que "uno de los nuestros" o
+              "que Pulp Fiction" o que "Porco Rosso" o que cualquier otra obra
+              de arte. Tiene actuaciones magistrales, como las de Al Pacino o
+              Marlon Brando, el personaje de Michael, tiene una evolución muy
+              creíble, no es tan exagerada como la evolución de Tony Montana en
+              Scarface, ni demasiado lenta para el espectador, te pones en su
+              lugar y ves como la mafia lo abraza para y le da una opción de
+              venganza que es favorable para sus nuevos ideales y para su
+              familia. El padrino me parece la obra de arte más grande de la
+              década de los 70 de largo. Mi puntuacion ante esta pelicula es
+              5/5.
+            </p>
+          </div>
+          <div class="modal-footer bg-black text-white">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--modal 8-->
+    <div
+      class="modal fade"
+      id="ModalReseña8"
+      tabindex="-1"
+      aria-labelledby="Reseña"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-black text-danger">
+            <h5 class="modal-title tipografia" id="Reseña">Mulan</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body bg-black text-white">
+            <p>
+              las críticas posicionan este live action como una cinta con
+              bastantes virtudes que promete no decepcionarte si estas dispuesto
+              a olvidar un poco a su antecesora. Con un certificado de frescura
+              en el Tomatometro, Mulan parece demostrarnos nuevamente que la
+              flor que florece en la adversidad es la más hermosa de todas. Esta
+              cautivadora e inspiradora historia de empoderamiento femenino,
+              honor, valentía y amor por la familia, es una sorpresa inesperada
+              que merecía llegar a la pantalla grande. Mi puntuacion es 4/5.
+            </p>
+          </div>
+          <div class="modal-footer bg-black text-white">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--modal 9-->
+    <div
+      class="modal fade"
+      id="ModalReseña9"
+      tabindex="-1"
+      aria-labelledby="Reseña"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-black text-danger">
+            <h5 class="modal-title tipografia" id="Reseña">Terminator</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body bg-black text-white">
+            <p>
+              on Terminator: Destino Oculto - 62%, el director Tim Miller y
+              productor James Cameron nos piden olvidarnos de Terminator Génesis
+              - 25%, Terminator - La Salvación - 33% y Terminator 3 - La
+              Rebelión de las Máquinas - 70%, y así lo hacemos. Para su mala
+              suerte, tampoco hace mucho más para elevar el potencial de la
+              historia tras Terminator 2: El Juicio Final - 92% y, en
+              comparación con ella, sigue siendo igual de poco interesante como
+              el resto de sus secuelas incluso pese a los esfuerzos de un elenco
+              que destaca por su dedicación.. Mi puntuacion ante esta pelicula
+              es 2/5.
+            </p>
+          </div>
+          <div class="modal-footer bg-black text-white">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--modal 10-->
+    <div
+      class="modal fade"
+      id="ModalReseña10"
+      tabindex="-1"
+      aria-labelledby="Reseña"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-black text-danger">
+            <h5 class="modal-title tipografia" id="Reseña">seven</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body bg-black text-white">
+            <p>
+              Todos los actores han hecho un trabajo impecable, Morgan Freeman
+              alucinante. La trama es perfecta ya que te engancha de principio a
+              fin, además, no se hace lenta ni aburrida en ningún momento. Y si
+              empiezo a hablar del gran trabajo del cámara no termino, los
+              colores, las escenas, todo alucinante.9. Mi puntuacion ante esta
+              pelicula es 5/5.
+            </p>
+          </div>
+          <div class="modal-footer bg-black text-white">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--modal 11-->
+    <div
+      class="modal fade"
+      id="ModalReseña11"
+      tabindex="-1"
+      aria-labelledby="Reseña"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-black text-danger">
+            <h5 class="modal-title tipografia" id="Reseña">Star wars</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body bg-black text-white">
+            <p>
+              La trama descrita en las nueve películas que componen la serie
+              principal de Star Wars relata las vivencias de la familia
+              Skywalker,16​ «hace mucho tiempo en una galaxia muy muy
+              lejana»,17​ cuyos integrantes son capaces de percibir y utilizar
+              «La Fuerza», lo cual les permite desarrollar habilidades como la
+              telequinesis, la clarividencia y el control mental, entre otras.
+              Me parece interesante la reperciciion de esta pelicula, un
+              verdadero clasico. Mi puntuacion ante esta pelicula es 5/5.
+            </p>
+          </div>
+          <div class="modal-footer bg-black text-white">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--modal 12-->
+    <div
+      class="modal fade"
+      id="ModalReseña12"
+      tabindex="-1"
+      aria-labelledby="Reseña"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-black text-danger">
+            <h5 class="modal-title tipografia" id="Reseña">Yentl</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body bg-black text-white">
+            <p>
+              es un filme bien realizado, cuidadoso en la localización de
+              exteriores (son espléndidos los paisajes checoslovacos) y en el
+              encuadre. Barbra Streisand supera como directora el trabajo de
+              algunos de sus colegas, a veces lanzados a dirigir al margen de la
+              lógica. Sólo que su historia se ahoga a medio camino, se pierde
+              por los enunciados del lugar común, ofreciendo simpatía donde cabe
+              exigir algo más de riesgo. Feminismo a punto de cruz. Mi
+              puntuacion 3/5
+            </p>
+          </div>
+          <div class="modal-footer bg-black text-white">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--modal 13-->
+    <div
+      class="modal fade"
+      id="ModalReseña13"
+      tabindex="-1"
+      aria-labelledby="Reseña"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-black text-danger">
+            <h5 class="modal-title tipografia" id="Reseña">Dracula</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body bg-black text-white">
+            <p>
+              Drácula es una obra interesante mas por su importancia en la
+              cultura popular que por su contenido. Es una novela que pese a
+              tener grandes elementos no sabe aprovecharlos del todo fuera de su
+              tramo inicial y que ha sufrido muchisímo el paso del tiempo. ¿Es
+              un clásico que todos deberíamos ver? Quizás si te gustan los
+              vampiros o tienes algo de tiempo libre, no lo vas a desperdiciar
+              pero podrías aprovecharlo mejor. La verdad prefiero la película de
+              Copolla, eso si es una obra maestra. Mi puntuacion ante esta
+              pelicula es 4/5.
+            </p>
+          </div>
+          <div class="modal-footer bg-black text-white">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--modal 14-->
+    <div
+      class="modal fade"
+      id="ModalReseña14"
+      tabindex="-1"
+      aria-labelledby="Reseña"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-black text-danger">
+            <h5 class="modal-title tipografia" id="Reseña">Footloose</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body bg-black text-white">
+            <p>
+              La original Footloose puso el listón muy alto a esta nueva
+              versión. Esta nueva tiene el acierto de contar con el mismo
+              guionista de aquella y gracias a eso no pierde ni una pizca de
+              fuerza. Esta nueva versión respeta las escenas míticas de la
+              anterior y profundiza un poco más en los motivos de la prohibición
+              de la música y el baile, dando un poco más de profundidad a los
+              personajes del pueblo dotándolos así de una personalidad más
+              fuerte y liberándolos de su condición de fanáticos religiosos que
+              ciegamente siguen la palabra del reverendo del pueblo. Divertida,
+              entretenida y con la esencia de la original Footloose es una buena
+              opción para divertirte en el cine. Y como no podía ser de otra
+              forma, suena la mítica ‘Footloose. Mi puntuacion es 4/5.
+            </p>
+          </div>
+          <div class="modal-footer bg-black text-white">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--modal 15-->
+    <div
+      class="modal fade"
+      id="ModalReseña15"
+      tabindex="-1"
+      aria-labelledby="Reseña"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-black text-danger">
+            <h5 class="modal-title tipografia" id="Reseña">Los Miserables</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body bg-black text-white">
+            <p>
+              Los Miserables dispone de un contexto fuertemente dramático que se
+              combina con la tragedia personal de los personajes principales
+              que, en su recorrido, deberán posicionarse en una lucha por
+              prevalecer que no todos conseguirán. Una lucha de voluntades
+              especialmente ejemplificada en el enfrentamiento visceral entre
+              Jean Valjean y Javert. El idealismo y el sentido de la justicia y
+              el perdón temblarán al paso de la relación antagónica que estos
+              hombres pondrán en juego. Mi puntuacion es 5/5
+            </p>
+          </div>
+          <div class="modal-footer bg-black text-white">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--modal 16-->
+    <div
+      class="modal fade"
+      id="ModalReseña16"
+      tabindex="-1"
+      aria-labelledby="Reseña"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-black text-danger">
+            <h5 class="modal-title tipografia" id="Reseña">The X men</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body bg-black text-white">
+            <p>
+              La recreación de la época es excelente, desde los atuendos y la
+              música hasta en la paleta de colores utilizada. Las escenas de
+              acción y los efectos especiales son de primera y aunque cuando son
+              CGI parecen efectos prácticos. Por tener acción, romance,
+              inteligencia, sensualidad y drama, esta primera clase pasa con
+              nota sobresaliente. Mi puntuacion es 3/5
+            </p>
+          </div>
+          <div class="modal-footer bg-black text-white">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+<div class="modal fade" id="modalnavbar" tabindex="-1" aria-labelledby="modalnavbarLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalnavbarLabel">MovieBlog</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+        <form>
+          <div class="mb-3">
+            <p class="lead">Creación de tu cuenta</p>
+            <label for="suscrip-email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="suscrip-email" required maxlength="45" minlength="5">
+            <div id="emailHelp" class="form-text">Nunca compartiremos tu información con otros.</div>
+          </div>
+          <div class="mb-3">
+            <label for="suscrip-pass" class="form-label">Password</label>
+            <input type="password" class="form-control" id="suscrip-pass" required maxlength="12" minlength="8">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Recibir notificaciones por email</label>
+          </div>
+          
+          <button type="submit" class="btn btn-warning" id="liveToastBtn">Crear cuenta</button>
+
+          <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+            <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+              <div class="toast-header">
+                
+                <strong class="me-auto">MovieBlog</strong>
+                <small>Bienvenido</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+              </div>
+              <div class="toast-body">
+                Verifica tu correo para completar la suscripción.
+              </div>
+            </div>
+          </div>
+
+        </form>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+    <footer class="bg-dark text-secondary ">
+      <section class="container-fluid">
+        <article class="row text-center">
+          <div class="col-sm-12 col-md-4">
+              <h4>Seguinos en nuestras redes</h4>
+            <div class="row">
+              <div class="mt-2 mb-4">
+                <a href="">
+                  <i class="fab fa-instagram fa-2x text-secondary m-1"></i>
+                </a>
+                <a href="">
+                  <i class="fab fa-facebook fa-2x text-secondary m-1"></i>
+                </a>
+                <a href="">
+                  <i class="fab fa-twitter fa-2x text-secondary m-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-sm-12 col-md-4">
+              <h4>Descarga nuesta App</h4>
+    
+            <h1 class="logo-font-resp">MovieBlog</h1>
+            <img
+              src="/img/badge-apple-store.svg"
+              alt="logo apple store"
+              class="mb-4" width="150"
+            />
+            <img
+              src="/img/google-play-badge-bb.svg"
+              alt="logo google play"
+              class="mb-4" width="150"
+            />
+          </div>
+    
+          <div class="col-sm-12 col-md-4">
+            <a href="./index.html">
+              <img
+                src="/img/logo.png"
+                alt="logo"
+                class="img-responsive rotate"
+                width="100"
+              />
+            </a>
+          </div>
+        </article>
+      </section>
+    </footer>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/e60deed6f7.js" crossorigin="anonymous" ></script>
+    <script src="/js/bootstrap.js"></script>
+    
+    </body>
+    </html>
+    
