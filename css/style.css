@@ -45,6 +45,12 @@
   .main-margin-login{
     margin-top: 160px;
   }
+  .main-margin-blog{
+    margin-top: 150px;
+  }
+  .coment-user{
+    display: none;
+  }
   
   
 }
@@ -66,6 +72,9 @@
   .main-margin-login{
     margin-top: 160px;
   }
+  .main-margin-blog{
+    margin-top: 155px;
+  }
   
 }
 
@@ -85,6 +94,9 @@
   }
   .main-margin-login{
     margin-top: 180px;
+  }
+  .coment-user{
+    display: none;
   }
 
 }
